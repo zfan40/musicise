@@ -1,0 +1,23 @@
+{
+  "name": "musicise",
+  "version": "0.1.0",
+  "description": "motional music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfan40/musicise.git"
+  },
+  "keywords": [
+    "motion",
+    "music"
+  ],
+  "author": "Ziwen Fan <fanatic224@gmail.com> (http://www.zi-wen.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zfan40/musicise/issues"
+  },
+  "homepage": "https://github.com/zfan40/musicise"
+}
