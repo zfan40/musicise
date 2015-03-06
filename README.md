@@ -3,19 +3,18 @@ musicise
 
 Ultimate goal: a library building bridge between motions to sounds
 
-!important: this can only be used on mobile, and of course it makes little sense to dance carrying a laptop or a PC
+!important: based on sensor feature, this works better on mobile, and of course it makes little sense to dance carrying a laptop or a PC
 ## Installation
-	npm install musicise --save
+	npm install musicise
 
 ## Usage
 
 	var musicise = require('musicise');
 	musicise.start();
-	musicise.on(newtempo)
-	musicise.on('newtempo',function(newtempo){
-		console.log('new tempo is ' + newtempo);
+	musicise.on('newtempo',function(tempo){			//this detects a new stable tempo based on a period of time
+		console.log('new tempo is ' + tempo);
     });
-    setInterval(function(){console.log(jb.getSteps());},1000);
+    setInterval(function(){console.log(musicise.getSteps());},1000);		//this returns the accumulated steps instantly
     musicise.stop();
 
 
