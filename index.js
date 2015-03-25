@@ -80,15 +80,18 @@
                       count++;  
             });  
         };
-        this.stop = function(){
+        this.stop = function() {
             removeEventListener('devicemotion');
             step_counter = 0;
         };
-        this.getSteps = function(){
+        this.getSteps = function() {
           return step_counter;
         };
-        this.getTempo = function(){
+        this.getTempo = function() {
             return currentTempo;
+        };
+        this.clearTempo = function() { //if not clear, tiny changes might never trigger newtempo. 
+            currentTempo = 0;
         };
     };
 

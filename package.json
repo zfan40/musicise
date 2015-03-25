@@ -1,6 +1,6 @@
 {
   "name": "musicise",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "motional music",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/zfan40/musicise/issues"
   },
-  "homepage": "https://github.com/zfan40/musicise"
+  "homepage": "https://github.com/zfan40/musicise",
+  "devDependencies": {}
 }
