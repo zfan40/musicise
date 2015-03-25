@@ -9,7 +9,8 @@ Ultimate goal: a library building bridge between motions to sounds
 
 ## Usage
 
-	var musicise = require('musicise');
+	var Musicise = require('musicise');
+	var musicise = new Musicise();
 	musicise.start();
 	musicise.on('newtempo',function(tempo){			//this detects a new stable tempo based on a period of time
 		console.log('new tempo is ' + tempo);
@@ -24,3 +25,4 @@ Ultimate goal: a library building bridge between motions to sounds
 
 ## Release History
 	* 0.1.0 Initial release, start,stop,getSteps, getTempo, event listening on('newtempo')
+	* 0.2.0 Add clearTempo method
